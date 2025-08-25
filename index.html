@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selamat malam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eb83cc;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            
+        }
+        .card {
+            background-color: #ffffff;
+            width: 350px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            padding: 20px;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px 15px 0 0;
+        }
+        .card h1 {
+            color: #e45eb7;
+            margin: 20px 0 10px;
+            font-size: 24px;
+        }
+        .card p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #d53a47;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+        } 
+        .button:hover {
+            background-color: #b3303b;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>good night</h1>
+        <p>
+            sayangku cintaku, hari pertama haid itu ngga enak banget ya, pasti perut kamu lagi sakit, badan 
+            lemes, ditambah mood kamu bisa gampang banget berubah. aku pengen banget ada di samping kamu sekarang, 
+            peluk kamu erat erat, biar kamu merasa aman dan nyaman. kalo bisa, aku mau jadi bantal hangat kamu, 
+            biar sakitny berkurang. kalo kamu lagi badmood, jangan takut ya, aku ngga akan ninggalin kamu. aku 
+            malah pengen manjain kamu lebih banyak, biar kamu merasa tenang. kamu boleh banget marah, ngambek, 
+            atau nangis tanpa alasan, aku tetap sayang sama kamu, bahkan makin sayang. kamu itu rumah buat hatiku, 
+            jadi apa pun kondisimu, aku selalu sayang sama kamu. istirahat yang cukup ya, cantikku. jangan lupa mam 
+            meskipun rasany melas, minum air hangat juga. aku pengen kamu cepat baikan biar bisa liat senyum kamu yang 
+            sangattt amat manis. kamu ngga sendirian, karena aku selalu ada buat kamu. i love you more
+        </p>
+    </div>
+<audio autoplay loop>
+    <source src="audio/aaa.mp3" type=" audio/mpeg" />
+  </audio>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const audio = document.querySelector("audio");
+      const userInteraction = () => {
+        audio.play();
+        document.removeEventListener("click", userInteraction);
+      };
+      document.addEventListener("click", userInteraction);
+    });
+  </script>
+</body>
+</html> 
